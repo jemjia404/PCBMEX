@@ -1,4 +1,4 @@
-﻿
+
 
 function activarFR4() {
     document.getElementById('rd2Caras').    disabled =  false
@@ -210,6 +210,19 @@ function CostoT() {
     document.getElementById('CText').innerHTML = "Cantidad Total:"
     document.getElementById('$').innerHTML = "$"
     document.getElementById('mo').innerHTML="MXN"
+}
+
+function caras(){
+
+    var cara1,cara2;
+    cara1=document.getElementById('rd1Cara').checked;
+    cara2=document.getElementById('rd2Cara').checked;
+
+
+    if (cara1==true){
+        document.getElementById('rdOz.5').checked=false;
+        document.getElementById('rdOz.5').disabled=true;
+    }
 }
 
 
