@@ -80,7 +80,7 @@ function Alum() {
 }
 
 function  NoCamposVaciosPCB() {
-        var Archivo, Nombre, Email, TEL, Cant,  DX, DY, Cara1, Cara2, rdG8, rdG1, rdG6, rdG2, Onz1,Onz2, Onz05, pthE, SExtras ;
+        var Archivo, Nombre, Email, TEL, Cant,  DX, DY, Cara1, Cara2, rdG8, rdG1, rdG6, rdG2,Onz3, Onz1,Onz2, Onz05, pthE, SExtras ;
         Archivo = document.getElementById('btn-file').value;
         Nombre = document.getElementById('nombrePCB').value;
         Email = document.getElementById('EmailUsuPCB').value;
@@ -101,6 +101,7 @@ function  NoCamposVaciosPCB() {
         Onz05=document.getElementById('rdOz.5').checked;
         Onz1=document.getElementById('rdOz1').checked;
         Onz2=document.getElementById('rdOz2').checked;
+        Onz3=document.getElementById('rdOz3').checked;
         /*---------------------------------------------------------------------------------------- */
     if ( Archivo==="" || Nombre==="" || Email === "" || TEL === "" || Cant === ""  ||  DX === "" || DY === ""  ) {
         if (Archivo === "") {
@@ -139,14 +140,13 @@ function  NoCamposVaciosPCB() {
         alert ("Elige el espesor del material  ");
         return false;
     }
-    if (Onz05==false && Onz1==false && Onz2==false ){
+    if (Onz05==false && Onz1==false && Onz2==false Onz3==false ){
         alert ("Elige la cantidad de onzas de tu PCB´s");
         return false;
     }
 
 
 }
-
 function NoCamposVaciosImpresion() {
     var ArchivoI, NombreI, EmailI, TELI, Cantidad, Material, SextrasImp, ColorImp;
     ArchivoI = document.getElementById('btnFileImpresion').value;
