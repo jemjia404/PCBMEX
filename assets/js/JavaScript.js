@@ -140,7 +140,7 @@ function  NoCamposVaciosPCB() {
         alert ("Elige el espesor del material  ");
         return false;
     }
-    if (Onz05==false && Onz1==false && Onz2==false Onz3==false ){
+    if (Onz05==false && Onz1==false && Onz2==false && Onz3==false ){
         alert ("Elige la cantidad de onzas de tu PCB´s");
         return false;
     }
