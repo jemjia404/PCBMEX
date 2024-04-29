@@ -73,7 +73,7 @@ $mailer->SMTPAuth = true; // Habilita la autenticación SMTP
 $mailer->SMTPAuth = true; 
 $mailer->Username = "PCBdeMexico@outlook.com"; 
 $mailer->Password = "Ra+272002"; 
-$mailer->setFrom("direccion@pcbdemexico.com.mx","$NombreIMP desde Pagina WEB de PCB de Mexico");// Quien envia 
+$mailer->setFrom("PCBdeMexico@outlook.com","$NombreIMP desde Pagina WEB de PCB de Mexico");// Quien envia 
 $mailer->addAddress("lappcbmex@gmail.com","Ingenieria" );// Quien recibe 
 //$mailer->addAddress("ingenieria@pcbdemexico.com.mx","M. en T. Rodolfo Morales Guerrero ");
 //$mailer->addAddress("ventas@pcbdemexico.com.mx", "ING. Rafael Tavera Paredes");
