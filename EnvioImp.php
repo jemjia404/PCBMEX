@@ -65,9 +65,10 @@ Fecha de emision: $dia <br/>
 </body>
 ";
 $mailer->isSMTP();
-$mailer->SMTPDebug = 0;
-$mailer->Host = 'smtp-mail.outlook.com';
-$mailer->Port = 587; 
+$mailer->SMTPDebug = 2;
+$mailer->Host = 'smtp-mail.outlook.com'; // Cambia esto al servidor SMTP que estés utilizando
+$mailer->Port = 587; // Puerto para conexión smtp
+$mailer->SMTPAuth = true; // Habilita la autenticación SMTP
 //$mailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mailer->SMTPAuth = true; 
 $mailer->Username = "PCBdeMexico@outlook.com"; 
