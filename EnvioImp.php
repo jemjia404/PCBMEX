@@ -45,7 +45,7 @@ $bodyI="
  </head>
 <body >
 <div  style='background-color:blue;padding:2%;'> 
-<p class='p4' style='color:white; text-align:center;padding-top:3%;font-size:5vw'>Pcb De México S De Rl Mi </p>
+<p class='p4' style='color:white; text-align:center;padding-top:3%;font-size:xx-large'>Pcb De México S De Rl Mi </p>
 </div>
 <div style=padding-left:20% >
 <h1 class='p4' >Cotización de Impresion 3D desde página WEB </h1>
@@ -88,8 +88,8 @@ header ("location: Gracias.html");
 exit();
 ob_end_clean();
 }
-header ('Location: Error.html');
-include ('Error.html');
+//header ('Location: Error.html');
+include "Error.html";
 exit();
 ob_end_clean();
 
