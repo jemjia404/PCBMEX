@@ -65,7 +65,7 @@ Fecha de emision: $dia <br/>
 </body>
 ";
 $mailer->isSMTP();
-$mailer->SMTPDebug = 2;
+$mailer->SMTPDebug = 0;
 $mailer->Host = 'smtp-mail.outlook.com'; // Cambia esto al servidor SMTP que estés utilizando
 $mailer->Port = 587; // Puerto para conexión smtp
 $mailer->SMTPAuth = true; // Habilita la autenticación SMTP
