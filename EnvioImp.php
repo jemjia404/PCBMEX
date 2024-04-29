@@ -70,7 +70,7 @@ $mailer->Host = 'smtp-mail.outlook.com';
 $mailer->Port = 587; 
 $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mailer->SMTPAuth = true; 
-$mailer->Username = "pcbdemexico@outlook.com"; 
+$mailer->Username = "PCBdeMexico@outlook.com"; 
 $mailer->Password = "Ra+272002"; 
 $mailer->setFrom("direccion@pcbdemexico.com.mx","$NombreIMP desde Pagina WEB de PCB de Mexico");// Quien envia 
 $mailer->addAddress("lappcbmex@gmail.com","Ingenieria" );// Quien recibe 
