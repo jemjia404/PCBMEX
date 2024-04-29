@@ -66,7 +66,7 @@ Fecha de emision: $dia <br/>
 ";
 $mailer->isSMTP();
 $mailer->SMTPDebug = 0;
-$mailer->Host = 'smtp.live.com';
+$mailer->Host = 'smtp-mail.outlook.com';
 $mailer->Port = 587; 
 $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mailer->SMTPAuth = true; 
@@ -89,6 +89,7 @@ exit();
 ob_end_clean();
 }
 header ('Location: Error.html');
+include ('Error.html');
 exit();
 ob_end_clean();
 
