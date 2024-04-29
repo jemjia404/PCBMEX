@@ -66,11 +66,11 @@ Fecha de emision: $dia <br/>
 ";
 $mailer->isSMTP();
 $mailer->SMTPDebug = 0;
-$mailer->Host = 'mail.pcbdemexico.com.mx';
-$mailer->Port = 465; 
+$mailer->Host = 'smtp.live.com';
+$mailer->Port = 587; 
 $mailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
 $mailer->SMTPAuth = true; 
-$mailer->Username = "direccion@pcbdemexico.com.mx"; 
+$mailer->Username = "pcbdemexico@outlook.com"; 
 $mailer->Password = "Ra+272002"; 
 $mailer->setFrom("direccion@pcbdemexico.com.mx","$NombreIMP desde Pagina WEB de PCB de Mexico");// Quien envia 
 $mailer->addAddress("lappcbmex@gmail.com","Ingenieria" );// Quien recibe 
